@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: eurusd-telegram-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python eurusd_bot_ready_planA.py"
+    autoDeploy: false
